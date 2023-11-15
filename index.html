@@ -35,7 +35,29 @@
             <p>
                 Empower underprivileged students with quality education..
             </p>
-            <button class="payStudent">Pay Now</button>
+            <!-- <input type="number"> -->
+            <button type="payStudent" onclick="openDonateForm()">Donate</button>
+
+  <!-- <<button type="button" onclick="openDonateForm()">Donate</button> -->
+
+  <dialog id="donateDialog">
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+
+      <label for="amount">Amount to be Paid:</label>
+      <input type="number" id="amount" name="amount" placeholder="Enter the amount" required>
+
+      <button type="button" id="open" onclick="payNow()">Pay Now</button>
+      <button type="button" id="close" onclick="closeDonateForm()">Close</button>
+    </form>
+  </dialog>
             <!-- <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_N0ORYLao980Fty" async> </script> </form> -->
           </div>
           <div class="item">
@@ -44,7 +66,7 @@
             <p>
                 Make a meaningful impact by participating in our Nutrition Sustenance Initiative..
             </p>
-            <button class="payStudent">Pay Now</button>
+            <button class="payStudent">Donate Now</button>
             <!-- <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_N0Ovl3Hbw6awxT" async> </script> </form> -->
           </div>
           <div class="item">
@@ -53,7 +75,22 @@
             <p>
                 Empower underprivileged students with quality education..
             </p>
-            <button class="payStudent">Pay Now</button>
+            <button class="payStudent">Donate Now</button>
+            <form>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+          
+              <label for="address">Address:</label>
+              <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+          
+              <label for="amount">Amount to be Paid:</label>
+              <input type="number" id="amount" name="amount" placeholder="Enter the amount" required>
+          
+              <button type="button" onclick="payNow()">Pay Now</button>
+        </form>
           </div>
         </div>
         <footer>
